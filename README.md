@@ -1,2 +1,2 @@
 # NutriCampusUnitTestReport
-Access it: https://tronipm.github.io/NutriCampusUnitTestReport
+Access it: https://NutriCampus.github.io/NutriCampusUnitTestReport
