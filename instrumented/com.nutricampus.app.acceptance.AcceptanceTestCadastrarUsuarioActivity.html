@@ -28,13 +28,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">41.924s</div>
+<div class="counter">48.364s</div>
 <p>duration</p>
 </div>
 </td>
@@ -43,8 +43,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -54,78 +54,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="attempToCreatAccountSuccessfully"></a>
-<h3 class="failures">attempToCreatAccountSuccessfully</h3>
-<span class="code">
-<pre>android.support.test.espresso.PerformException: Error performing 'type text(44502396605)' on view 'with id: com.nutricampus.app:id/edtRegistro'.
-at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
-at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
-at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
-at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
-at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
-at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.AcceptanceTestCadastrarUsuarioActivity.attempToCreatAccountSuccessfully(AcceptanceTestCadastrarUsuarioActivity.java:63)
-at java.lang.reflect.Method.invokeNative(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:515)
-at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
-at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
-at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-at org.junit.runners.Suite.runChild(Suite.java:128)
-at org.junit.runners.Suite.runChild(Suite.java:27)
-at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
-at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
-at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
-Caused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:
-((is displayed on the screen to the user) and (supports input methods or is assignable from class: class android.widget.SearchView))
-Target view: &quot;AppCompatEditText{id=2131558551, res-name=edtRegistro, visibility=VISIBLE, width=230, height=0, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=, input-type=1, ime-target=false, has-links=false}&quot;
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:138)
-at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
-at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-at android.os.Handler.handleCallback(Handler.java:733)
-at android.os.Handler.dispatchMessage(Handler.java:95)
-at android.os.Looper.loop(Looper.java:136)
-at android.app.ActivityThread.main(ActivityThread.java:5017)
-at java.lang.reflect.Method.invokeNative(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:515)
-at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
-at dalvik.system.NativeStart.main(Native Method)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -136,14 +68,14 @@ at dalvik.system.NativeStart.main(Native Method)
 </thead>
 <tr>
 <td>attempToCreatAccountSuccessfully</td>
-<td class="failures">failed (41.924s)</td>
+<td class="success">passed (48.364s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 1:40:20 AM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 2:06:29 AM</p>
 </div>
 </div>
 </body>
