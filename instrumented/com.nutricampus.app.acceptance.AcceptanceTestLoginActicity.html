@@ -28,13 +28,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">3</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m14.50s</div>
+<div class="counter">1m16.52s</div>
 <p>duration</p>
 </div>
 </td>
@@ -44,7 +44,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="percent">66%</div>
 <p>successful</p>
 </div>
 </td>
@@ -63,86 +63,50 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="attempToLoginSuccessfuly"></a>
-<h3 class="failures">attempToLoginSuccessfuly</h3>
+<a name="attempToLoginSuccessfully"></a>
+<h3 class="failures">attempToLoginSuccessfully</h3>
 <span class="code">
-<pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
-Root{application-window-token=android.view.ViewRootImpl$W@b2d68320, window-token=android.view.ViewRootImpl$W@b2d68320, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-. All Roots:
-Root{application-window-token=android.view.ViewRootImpl$W@b2d68320, window-token=android.view.ViewRootImpl$W@b2d68320, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
-at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:9)
-at android.support.test.espresso.base.ViewFinderImpl.getView(ViewFinderImpl.java:68)
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:120)
-at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
-at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-at android.os.Handler.handleCallback(Handler.java:733)
-at android.os.Handler.dispatchMessage(Handler.java:95)
-at android.os.Looper.loop(Looper.java:136)
-at android.app.ActivityThread.main(ActivityThread.java:5017)
+<pre>android.support.test.espresso.NoMatchingRootException: Matcher 'is toast' did not match any of the following roots: [Root{application-window-token=android.view.ViewRootImpl$W@b2db5c88, window-token=android.view.ViewRootImpl$W@b2db5c88, has-window-focus=true, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}]
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:579)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:92)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)
+at com.nutricampus.app.acceptance.ToastMatcher.isToastMessageDisplayed(ToastMatcher.java:27)
+at com.nutricampus.app.acceptance.AcceptanceTestLoginActicity.attempToLoginSuccessfully(AcceptanceTestLoginActicity.java:154)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
-at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
-at dalvik.system.NativeStart.main(Native Method)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="attempToLoginWithExistentLoginAndWorngPassword"></a>
-<h3 class="failures">attempToLoginWithExistentLoginAndWorngPassword</h3>
-<span class="code">
-<pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
-Root{application-window-token=android.view.ViewRootImpl$W@b2d731b8, window-token=android.view.ViewRootImpl$W@b2d731b8, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-. All Roots:
-Root{application-window-token=android.view.ViewRootImpl$W@b2d731b8, window-token=android.view.ViewRootImpl$W@b2d731b8, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
-at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:9)
-at android.support.test.espresso.base.ViewFinderImpl.getView(ViewFinderImpl.java:68)
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:120)
-at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
-at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-at android.os.Handler.handleCallback(Handler.java:733)
-at android.os.Handler.dispatchMessage(Handler.java:95)
-at android.os.Looper.loop(Looper.java:136)
-at android.app.ActivityThread.main(ActivityThread.java:5017)
-at java.lang.reflect.Method.invokeNative(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:515)
-at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
-at dalvik.system.NativeStart.main(Native Method)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="attempToLoginWithNonExistentLogin"></a>
-<h3 class="failures">attempToLoginWithNonExistentLogin</h3>
-<span class="code">
-<pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
-Root{application-window-token=android.view.ViewRootImpl$W@b2dcbc18, window-token=android.view.ViewRootImpl$W@b2dcbc18, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-. All Roots:
-Root{application-window-token=android.view.ViewRootImpl$W@b2dcbc18, window-token=android.view.ViewRootImpl$W@b2dcbc18, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
-at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:9)
-at android.support.test.espresso.base.ViewFinderImpl.getView(ViewFinderImpl.java:68)
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:120)
-at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
-at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-at android.os.Handler.handleCallback(Handler.java:733)
-at android.os.Handler.dispatchMessage(Handler.java:95)
-at android.os.Looper.loop(Looper.java:136)
-at android.app.ActivityThread.main(ActivityThread.java:5017)
-at java.lang.reflect.Method.invokeNative(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:515)
-at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
-at dalvik.system.NativeStart.main(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
 </pre>
 </span>
 </div>
@@ -157,23 +121,23 @@ at dalvik.system.NativeStart.main(Native Method)
 </tr>
 </thead>
 <tr>
-<td>attempToLoginSuccessfuly</td>
-<td class="failures">failed (24.509s)</td>
+<td>attempToLoginSuccessfully</td>
+<td class="failures">failed (51.040s)</td>
 </tr>
 <tr>
 <td>attempToLoginWithExistentLoginAndWorngPassword</td>
-<td class="failures">failed (23.632s)</td>
+<td class="success">passed (11.761s)</td>
 </tr>
 <tr>
 <td>attempToLoginWithNonExistentLogin</td>
-<td class="failures">failed (26.361s)</td>
+<td class="success">passed (13.720s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 3:13:11 AM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 3:46:51 AM</p>
 </div>
 </div>
 </body>
