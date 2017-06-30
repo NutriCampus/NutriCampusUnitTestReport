@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function readTextFile(file){
+        var rawFile = new XMLHttpRequest();
+        var v = "";
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function (){
+            if(rawFile.readyState === 4){
+                if(rawFile.status === 200 || rawFile.status == 0){
+                    var allText = rawFile.responseText;
+                    v = (allText);
+                }
+            }
+        }
+        rawFile.send(null);
+        return v;
+    }
+
+    var versao = readTextFile("versao.txt");
+    //alert(versao);
+  </script>
 </head>
 <body>
 
@@ -15,13 +35,15 @@
   <p><a target="_blank" href="https://github.com/NutriCampus/NutriCampus">Main</a> project | 
   <a target="_blank" href="https://github.com/NutriCampus/NutriCampusUnitTestReport">Reports</a> project | 
   <a target="_blank" href="https://github.com/NutriCampus/NutriCampusUnitTestReport/tree/apk/apk">Download</a> apk</p> 
+  <small id="versaoCommit"></small>
+  <script>document.getElementById("versaoCommit").innerHTML = versao;</script>
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h3>Unit Report</h3>
-	  <button onclick="window.open('https://nutricampus.github.io/NutriCampusUnitTestReport/unit/index.html', '_blank');" type="button" class="btn btn-secondary btn-lg">Access</button>
+    <button onclick="window.open('https://nutricampus.github.io/NutriCampusUnitTestReport/unit/index.html', '_blank');" type="button" class="btn btn-secondary btn-lg">Access</button>
       <p>JUnit is a unit testing framework for the Java programming language.</p>
     </div>
     <div class="col-sm-4">
