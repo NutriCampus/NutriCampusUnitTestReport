@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class com.nutricampus.app.acceptance.AcceptanceTestLoginActivity</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.nutricampus.app.acceptance.AcceptanceTestLoginActivity</h1>
+<div class="breadcrumbs">
+<a href="index.html">all</a> &gt; 
+<a href="com.nutricampus.app.acceptance.html">com.nutricampus.app.acceptance</a> &gt; AcceptanceTestLoginActivity</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m19.73s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="attempToLoginSuccessfully"></a>
+<h3 class="failures">attempToLoginSuccessfully</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
+Root{application-window-token=android.view.ViewRootImpl$W@b305be00, window-token=android.view.ViewRootImpl$W@b305be00, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+. All Roots:
+Root{application-window-token=android.view.ViewRootImpl$W@b305be00, window-token=android.view.ViewRootImpl$W@b305be00, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+Root{application-window-token=android.view.ViewRootImpl$W@b3020898, window-token=android.view.ViewRootImpl$W@b3020898, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=INVISIBLE, width=480, height=800, has-focus=true, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
+at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
+at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
+at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:9)
+at android.support.test.espresso.base.ViewFinderImpl.getView(ViewFinderImpl.java:68)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:120)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at android.os.Handler.handleCallback(Handler.java:733)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:136)
+at android.app.ActivityThread.main(ActivityThread.java:5017)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:515)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+at dalvik.system.NativeStart.main(Native Method)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>test(AVD) - 4.4.2</th>
+</tr>
+</thead>
+<tr>
+<td>attempToLoginSuccessfully</td>
+<td class="failures">failed (32.702s)</td>
+</tr>
+<tr>
+<td>attempToLoginWithExistentLoginAndWorngPassword</td>
+<td class="success">passed (20.473s)</td>
+</tr>
+<tr>
+<td>attempToLoginWithNonExistentLogin</td>
+<td class="success">passed (26.551s)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 6:35:09 PM</p>
+</div>
+</div>
+</body>
