@@ -22,19 +22,19 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m20.71s</div>
+<div class="counter">1m35.19s</div>
 <p>duration</p>
 </div>
 </td>
@@ -44,7 +44,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">66%</div>
+<div class="percent">50%</div>
 <p>successful</p>
 </div>
 </td>
@@ -63,14 +63,14 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="attempToLoginSuccessfully"></a>
-<h3 class="failures">attempToLoginSuccessfully</h3>
+<a name="attempToLoginCreatingAccount"></a>
+<h3 class="failures">attempToLoginCreatingAccount</h3>
 <span class="code">
 <pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
-Root{application-window-token=android.view.ViewRootImpl$W@b3050048, window-token=android.view.ViewRootImpl$W@b3050048, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+Root{application-window-token=android.view.ViewRootImpl$W@b30b0dd8, window-token=android.view.ViewRootImpl$W@b30b0dd8, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
 . All Roots:
-Root{application-window-token=android.view.ViewRootImpl$W@b3050048, window-token=android.view.ViewRootImpl$W@b3050048, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-Root{application-window-token=android.view.ViewRootImpl$W@b2ebf828, window-token=android.view.ViewRootImpl$W@b2ebf828, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=INVISIBLE, width=480, height=800, has-focus=true, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+Root{application-window-token=android.view.ViewRootImpl$W@b30b0dd8, window-token=android.view.ViewRootImpl$W@b30b0dd8, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
+Root{application-window-token=android.view.ViewRootImpl$W@b30478b0, window-token=android.view.ViewRootImpl$W@b30478b0, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#1a90180 pfl=0x8 wanim=0x10302a1}, decor-view-string=DecorView{id=-1, visibility=INVISIBLE, width=480, height=800, has-focus=true, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
 at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
 at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
 at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
@@ -91,6 +91,50 @@ at dalvik.system.NativeStart.main(Native Method)
 </pre>
 </span>
 </div>
+<div class="test">
+<a name="attempToLoginSuccessfully"></a>
+<h3 class="failures">attempToLoginSuccessfully</h3>
+<span class="code">
+<pre>junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:48)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.nutricampus.app.acceptance.AcceptanceTestLoginActivity.attempToLoginSuccessfully(AcceptanceTestLoginActivity.java:161)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:515)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
+</pre>
+</span>
+</div>
 </div>
 <div id="tab1" class="tab">
 <h2>Tests</h2>
@@ -102,23 +146,27 @@ at dalvik.system.NativeStart.main(Native Method)
 </tr>
 </thead>
 <tr>
+<td>attempToLoginCreatingAccount</td>
+<td class="failures">failed (30.056s)</td>
+</tr>
+<tr>
 <td>attempToLoginSuccessfully</td>
-<td class="failures">failed (31.482s)</td>
+<td class="failures">failed (19.045s)</td>
 </tr>
 <tr>
 <td>attempToLoginWithExistentLoginAndWorngPassword</td>
-<td class="success">passed (22.054s)</td>
+<td class="success">passed (21.016s)</td>
 </tr>
 <tr>
 <td>attempToLoginWithNonExistentLogin</td>
-<td class="success">passed (27.171s)</td>
+<td class="success">passed (25.073s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 7:15:52 PM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 7:56:23 PM</p>
 </div>
 </div>
 </body>
