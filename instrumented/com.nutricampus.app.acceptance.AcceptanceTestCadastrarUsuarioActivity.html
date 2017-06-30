@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">23.042s</div>
+<div class="counter">37.546s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,16 +66,50 @@
 <a name="attempToCreatAccountSuccessfully"></a>
 <h3 class="failures">attempToCreatAccountSuccessfully</h3>
 <span class="code">
-<pre>java.lang.RuntimeException: Waited for the root of the view hierarchy to have window focus and not be requesting layout for over 10 seconds. If you specified a non default root matcher, it may be picking a root that never takes focus. Otherwise, something is seriously wrong. Selected Root:
-Root{application-window-token=android.view.ViewRootImpl$W@7d8d4a5, window-token=android.view.ViewRootImpl$W@7d8d4a5, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030461 surfaceInsets=Rect(0, 0 - 0, 0)}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-. All Roots:
-Root{application-window-token=android.view.ViewRootImpl$W@7d8d4a5, window-token=android.view.ViewRootImpl$W@7d8d4a5, has-window-focus=false, layout-params-type=1, layout-params-string=WM.LayoutParams{(0,0)(fillxfill) sim=#100 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030461 surfaceInsets=Rect(0, 0 - 0, 0)}, decor-view-string=DecorView{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}}
-at android.support.test.espresso.base.RootViewPicker.get(RootViewPicker.java:99)
-at android.support.test.espresso.ViewInteractionModule.provideRootView(ViewInteractionModule.java:69)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:23)
-at android.support.test.espresso.ViewInteractionModule_ProvideRootViewFactory.get(ViewInteractionModule_ProvideRootViewFactory.java:9)
-at android.support.test.espresso.base.ViewFinderImpl.getView(ViewFinderImpl.java:68)
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:120)
+<pre>android.support.test.espresso.PerformException: Error performing 'type text(44502396605)' on view 'with id: com.nutricampus.app:id/edtRegistro'.
+at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
+at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
+at com.nutricampus.app.acceptance.AcceptanceTestCadastrarUsuarioActivity.attempToCreatAccountSuccessfully(AcceptanceTestCadastrarUsuarioActivity.java:63)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1837)
+Caused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:
+((is displayed on the screen to the user) and (supports input methods or is assignable from class: class android.widget.SearchView))
+Target view: &quot;AppCompatEditText{id=2131558551, res-name=edtRegistro, visibility=VISIBLE, width=230, height=0, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=, input-type=1, ime-target=false, has-links=false}&quot;
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:138)
 at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
 at java.util.concurrent.FutureTask.run(FutureTask.java:237)
 at android.os.Handler.handleCallback(Handler.java:739)
@@ -101,14 +135,14 @@ at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
 </thead>
 <tr>
 <td>attempToCreatAccountSuccessfully</td>
-<td class="failures">failed (23.042s)</td>
+<td class="failures">failed (37.546s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 12:45:22 AM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Jun 30, 2017 1:04:26 AM</p>
 </div>
 </div>
 </body>
