@@ -173,17 +173,17 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 10 errors and 114 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 11 errors and 114 warnings</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-Check performed at Tue Jul 11 21:06:04 UTC 2017      </nav>
+Check performed at Wed Jul 12 06:53:53 UTC 2017      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Issue Types</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
-      <a class="mdl-navigation__link" href="#OnClick"><i class="material-icons error-icon">error</i><code>onClick</code> method does not exist (2)</a>
+      <a class="mdl-navigation__link" href="#OnClick"><i class="material-icons error-icon">error</i><code>onClick</code> method does not exist (3)</a>
       <a class="mdl-navigation__link" href="#ScrollViewSize"><i class="material-icons warning-icon">warning</i>ScrollView size validation (1)</a>
       <a class="mdl-navigation__link" href="#ApplySharedPref"><i class="material-icons warning-icon">warning</i>Use <code>apply()</code> on <code>SharedPreferences</code> (2)</a>
       <a class="mdl-navigation__link" href="#CommitPrefEdits"><i class="material-icons warning-icon">warning</i>Missing <code>commit()</code> on <code>SharedPreference</code> editor (1)</a>
@@ -226,7 +226,7 @@ Check performed at Tue Jul 11 21:06:04 UTC 2017      </nav>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
 <tr>
-<td class="countColumn">2</td><td class="issueColumn"><i class="material-icons error-icon">error</i>
+<td class="countColumn">3</td><td class="issueColumn"><i class="material-icons error-icon">error</i>
 <a href="#OnClick">OnClick</a>: <code>onClick</code> method does not exist</td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
@@ -341,14 +341,24 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java">../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java</a>:232</span>: <span class="message">On click handler <code>salvar(View)</code> must be public</span><br /><pre class="errorlines">
-<span class="lineno"> 229 </span>      <span class="keyword">return</span> lista;
-<span class="lineno"> 230 </span>  }
-<span class="lineno"> 231 </span>
-<span class="caretline"><span class="lineno"> 232 </span>  <span class="keyword">protected</span> <span class="keyword">void</span> <span class="error">salvar</span>(View view){&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 233 </span>      <span class="keyword">if</span> (!validaDados()) {
-<span class="lineno"> 234 </span>          Toast.makeText(CadastrarPropriedadeActivity.<span class="keyword">this</span>,R.string.msg_erro_cadastro_geral, Toast.LENGTH_LONG).show();
-<span class="lineno"> 235 </span>          <span class="keyword">return</span>;
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java">../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java</a>:231</span>: <span class="message">On click handler <code>salvar(View)</code> must be public</span><br /><pre class="errorlines">
+<span class="lineno"> 228 </span>      <span class="keyword">return</span> lista;
+<span class="lineno"> 229 </span>  }
+<span class="lineno"> 230 </span>
+<span class="caretline"><span class="lineno"> 231 </span>  <span class="keyword">protected</span> <span class="keyword">void</span> <span class="error">salvar</span>(View view){&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 232 </span>      <span class="keyword">if</span> (!validaDados()) {
+<span class="lineno"> 233 </span>          Toast.makeText(CadastrarPropriedadeActivity.<span class="keyword">this</span>,R.string.msg_erro_cadastro_geral, Toast.LENGTH_LONG).show();
+<span class="lineno"> 234 </span>          <span class="keyword">return</span>;
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java">../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java</a>:266</span>: <span class="message">On click handler <code>criarProprietario(View)</code> must be public</span><br /><pre class="errorlines">
+<span class="lineno"> 263 </span>
+<span class="lineno"> 264 </span>    }
+<span class="lineno"> 265 </span>
+<span class="caretline"><span class="lineno"> 266 </span>    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="error">criarProprietario</span>(View view) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 267 </span>        Intent it = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, CadastrarProprietarioActivity.<span class="keyword">class</span>);
+<span class="lineno"> 268 </span>        startActivity(it);
+<span class="lineno"> 269 </span>    }
 </pre>
 
 <span class="location"><a href="../../src/main/res/layout/content_lista_propriedades.xml">../../src/main/res/layout/content_lista_propriedades.xml</a>:41</span>: <span class="message">Corresponding method handler '<code>public void atualizaListaPropriedades(android.view.View)</code>' not found</span><br /><pre class="errorlines">
@@ -1025,13 +1035,13 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/model/ListaPropriedadesAdapter.java">../../src/main/java/com/nutricampus/app/model/ListaPropriedadesAdapter.java</a>:53</span>: <span class="message">Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling</span><br /><pre class="errorlines">
-<span class="lineno"> 50 </span>
-<span class="lineno"> 51 </span>    <span class="annotation">@Override</span>
-<span class="lineno"> 52 </span>    <span class="keyword">public</span> View getView(<span class="keyword">int</span> indice, <span class="keyword">final</span> View convertView, ViewGroup viewGroup) {
-<span class="caretline"><span class="lineno"> 53 </span>        <span class="keyword">final</span> View view = <span class="warning">act.getLayoutInflater()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 54 </span>                .inflate(R.layout.lista_propriedade_personalizada, viewGroup, <span class="keyword">false</span>);
-<span class="lineno"> 55 </span>        <span class="keyword">final</span> Propriedade propriedade = propriedades.get(indice);
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/model/ListaPropriedadesAdapter.java">../../src/main/java/com/nutricampus/app/model/ListaPropriedadesAdapter.java</a>:45</span>: <span class="message">Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling</span><br /><pre class="errorlines">
+<span class="lineno"> 42 </span>
+<span class="lineno"> 43 </span>    <span class="annotation">@Override</span>
+<span class="lineno"> 44 </span>    <span class="keyword">public</span> View getView(<span class="keyword">int</span> indice, <span class="keyword">final</span> View convertView, ViewGroup viewGroup) {
+<span class="caretline"><span class="lineno"> 45 </span>        <span class="keyword">final</span> View view = <span class="warning">act.getLayoutInflater()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 46 </span>                .inflate(R.layout.lista_propriedade_personalizada, viewGroup, <span class="keyword">false</span>);
+<span class="lineno"> 47 </span>        <span class="keyword">final</span> Propriedade propriedade = propriedades.get(indice);
 </pre>
 
 </div>
@@ -1585,54 +1595,54 @@ Additional locations: <ul>
 <span class="lineno">  55 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"msg_cadastro_erro"</span>>Erro ao tentar realizar o cadastro<span class="tag">&lt;/string></span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:78</span>: <span class="message">The resource <code>R.string.cadastrar_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  75 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_add_propriedade"</span>>Nova Propriedade<span class="tag">&lt;/string></span>
-<span class="lineno">  76 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_editar_propriedade"</span>>Editar Propriedade<span class="tag">&lt;/string></span>
-<span class="lineno">  77 </span>
-<span class="caretline"><span class="lineno">  78 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"cadastrar_proprietario"</span></span>> Cadastrar Proprietario<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  79 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_buscar_proprietario_nome"</span>>Buscar Proprietário (CPF)<span class="tag">&lt;/string></span>
-<span class="lineno">  80 </span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:79</span>: <span class="message">The resource <code>R.string.cadastrar_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  76 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_add_propriedade"</span>>Nova Propriedade<span class="tag">&lt;/string></span>
+<span class="lineno">  77 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_editar_propriedade"</span>>Editar Propriedade<span class="tag">&lt;/string></span>
+<span class="lineno">  78 </span>
+<span class="caretline"><span class="lineno">  79 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"cadastrar_proprietario"</span></span>> Cadastrar Proprietario<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  80 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_buscar_proprietario_nome"</span>>Buscar Proprietário (CPF)<span class="tag">&lt;/string></span>
 <span class="lineno">  81 </span>
+<span class="lineno">  82 </span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:79</span>: <span class="message">The resource <code>R.string.campo_buscar_proprietario_nome</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  76 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_editar_propriedade"</span>>Editar Propriedade<span class="tag">&lt;/string></span>
-<span class="lineno">  77 </span>
-<span class="lineno">  78 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"cadastrar_proprietario"</span>> Cadastrar Proprietario<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno">  79 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_buscar_proprietario_nome"</span></span>>Buscar Proprietário (CPF)<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  80 </span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:80</span>: <span class="message">The resource <code>R.string.campo_buscar_proprietario_nome</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  77 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_editar_propriedade"</span>>Editar Propriedade<span class="tag">&lt;/string></span>
+<span class="lineno">  78 </span>
+<span class="lineno">  79 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"cadastrar_proprietario"</span>> Cadastrar Proprietario<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  80 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_buscar_proprietario_nome"</span></span>>Buscar Proprietário (CPF)<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  81 </span>
-<span class="lineno">  82 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_rua"</span>>Rua<span class="tag">&lt;/string></span>
+<span class="lineno">  82 </span>
+<span class="lineno">  83 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_rua"</span>>Rua<span class="tag">&lt;/string></span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:89</span>: <span class="message">The resource <code>R.string.campo_spinner_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  86 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_numero"</span>>Número<span class="tag">&lt;/string></span>
-<span class="lineno">  87 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_cep"</span>>CEP<span class="tag">&lt;/string></span>
-<span class="lineno">  88 </span>
-<span class="caretline"><span class="lineno">  89 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_spinner_proprietario"</span></span>>Selecione o proprietário…<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  90 </span>
-<span class="lineno">  91 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_proprietario"</span>>Nome do Proprietário<span class="tag">&lt;/string></span>
-<span class="lineno">  92 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_nome_proprietario"</span>>Proprietário<span class="tag">&lt;/string></span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:90</span>: <span class="message">The resource <code>R.string.campo_spinner_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  87 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_numero"</span>>Número<span class="tag">&lt;/string></span>
+<span class="lineno">  88 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_cep"</span>>CEP<span class="tag">&lt;/string></span>
+<span class="lineno">  89 </span>
+<span class="caretline"><span class="lineno">  90 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_spinner_proprietario"</span></span>>Selecione o proprietário…<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  91 </span>
+<span class="lineno">  92 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_proprietario"</span>>Nome do Proprietário<span class="tag">&lt;/string></span>
+<span class="lineno">  93 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_nome_proprietario"</span>>Proprietário<span class="tag">&lt;/string></span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:92</span>: <span class="message">The resource <code>R.string.campo_nome_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  89 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_spinner_proprietario"</span>>Selecione o proprietário…<span class="tag">&lt;/string></span>
-<span class="lineno">  90 </span>
-<span class="lineno">  91 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_proprietario"</span>>Nome do Proprietário<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno">  92 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_nome_proprietario"</span></span>>Proprietário<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  93 </span>
-<span class="lineno">  94 </span>    <span class="comment">&lt;!-- titulos das telas --></span>
-<span class="lineno">  95 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_recuperar_senha"</span>>Recuperar Senha<span class="tag">&lt;/string></span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:93</span>: <span class="message">The resource <code>R.string.campo_nome_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  90 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_spinner_proprietario"</span>>Selecione o proprietário…<span class="tag">&lt;/string></span>
+<span class="lineno">  91 </span>
+<span class="lineno">  92 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_proprietario"</span>>Nome do Proprietário<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  93 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_nome_proprietario"</span></span>>Proprietário<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  94 </span>
+<span class="lineno">  95 </span>    <span class="comment">&lt;!-- titulos das telas --></span>
+<span class="lineno">  96 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_recuperar_senha"</span>>Recuperar Senha<span class="tag">&lt;/string></span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:98</span>: <span class="message">The resource <code>R.string.titulo_novo_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  95 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_recuperar_senha"</span>>Recuperar Senha<span class="tag">&lt;/string></span>
-<span class="lineno">  96 </span>
-<span class="lineno">  97 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_novo_usuario"</span>>Novo usuário<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno">  98 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"titulo_novo_proprietario"</span></span>>Novo proprietário<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  99 </span>
-<span class="lineno"> 100 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"msg_senha_enviada"</span>>Senha enviada por e-mail<span class="tag">&lt;/string></span>
-<span class="lineno"> 101 </span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:99</span>: <span class="message">The resource <code>R.string.titulo_novo_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  96 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_recuperar_senha"</span>>Recuperar Senha<span class="tag">&lt;/string></span>
+<span class="lineno">  97 </span>
+<span class="lineno">  98 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"titulo_novo_usuario"</span>>Novo usuário<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  99 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"titulo_novo_proprietario"</span></span>>Novo proprietário<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 100 </span>
+<span class="lineno"> 101 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"msg_senha_enviada"</span>>Senha enviada por e-mail<span class="tag">&lt;/string></span>
+<span class="lineno"> 102 </span>
 </pre>
 
 </div>
@@ -2054,14 +2064,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/ListaPropriedadesActivity.java">../../src/main/java/com/nutricampus/app/activities/ListaPropriedadesActivity.java</a>:244</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
-<span class="lineno"> 241 </span>
-<span class="lineno"> 242 </span>  listPropriedades.setAdapter(adapter);
-<span class="lineno"> 243 </span>
-<span class="caretline"><span class="lineno"> 244 </span>  mensagemQuantidade.setText(<span class="warning">lista.size() + <span class="string">" "</span> + getString(R.string.campo_texto_lista_encontrados)</span>);</span>
-<span class="lineno"> 245 </span>
-<span class="lineno"> 246 </span>  <span class="keyword">if</span> (lista.size() == <span class="number">0</span>) {
-<span class="lineno"> 247 </span>      mensagemQuantidade.setVisibility(View.VISIBLE);
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/ListaPropriedadesActivity.java">../../src/main/java/com/nutricampus/app/activities/ListaPropriedadesActivity.java</a>:253</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 250 </span>
+<span class="lineno"> 251 </span>  listPropriedades.setAdapter(adapter);
+<span class="lineno"> 252 </span>
+<span class="caretline"><span class="lineno"> 253 </span>  mensagemQuantidade.setText(<span class="warning">lista.size() + <span class="string">" "</span> + getString(R.string.campo_texto_lista_encontrados)</span>);</span>
+<span class="lineno"> 254 </span>
+<span class="lineno"> 255 </span>  <span class="keyword">if</span> (lista.size() == <span class="number">0</span>) {
+<span class="lineno"> 256 </span>      mensagemQuantidade.setVisibility(View.VISIBLE);
 </pre>
 
 </div>
