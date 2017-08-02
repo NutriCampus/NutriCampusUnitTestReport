@@ -173,10 +173,10 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 9 errors and 155 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 9 errors and 154 warnings</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-Check performed at Wed Aug 02 16:18:39 UTC 2017      </nav>
+Check performed at Wed Aug 02 18:46:44 UTC 2017      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -210,7 +210,7 @@ Check performed at Wed Aug 02 16:18:39 UTC 2017      </nav>
       <a class="mdl-navigation__link" href="#SetTextI18n"><i class="material-icons warning-icon">warning</i>TextView Internationalization (5)</a>
       <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (15)</a>
       <a class="mdl-navigation__link" href="#RtlSymmetry"><i class="material-icons warning-icon">warning</i>Padding and margin symmetry (7)</a>
-      <a class="mdl-navigation__link" href="#RtlHardcoded"><i class="material-icons warning-icon">warning</i>Using left/right instead of start/end attributes (18)</a>
+      <a class="mdl-navigation__link" href="#RtlHardcoded"><i class="material-icons warning-icon">warning</i>Using left/right instead of start/end attributes (17)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -321,7 +321,7 @@ Check performed at Wed Aug 02 16:18:39 UTC 2017      </nav>
 <td class="countColumn">7</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#RtlSymmetry">RtlSymmetry</a>: Padding and margin symmetry</td></tr>
 <tr>
-<td class="countColumn">18</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">17</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#RtlHardcoded">RtlHardcoded</a>: Using left/right instead of start/end attributes</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (21)</a>
 </td></tr></table>
@@ -754,7 +754,7 @@ Dismiss</button>            </div>
 </span><span class="lineno">  39 </span><span class="attribute">                </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/spinner_proprietario"</span>
 <span class="caretline"><span class="lineno">  40 </span>                <span class="warning"><span class="prefix">android:</span><span class="attribute">layout_alignParentLeft</span>=<span class="value">"true"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  41 </span>                <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"left"</span>
-<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"0.7"</span>
 <span class="lineno">  43 </span>                <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"74dp"</span></pre>
 
 <span class="location"><a href="../../src/main/res/layout/content_login.xml">../../src/main/res/layout/content_login.xml</a>:113</span>: <span class="message">Invalid layout param in a <code>RelativeLayout</code>: <code>layout_weight</code></span><br /><pre class="errorlines">
@@ -939,14 +939,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:115</span>: <span class="message">Set <code>android:baselineAligned="false"</code> on this element for better performance</span><br /><pre class="errorlines">
-<span class="lineno"> 112 </span>                <span class="prefix">android:</span><span class="attribute">inputType</span>=<span class="value">"textCapWords"</span> />
-<span class="lineno"> 113 </span>        <span class="tag">&lt;/android.support.design.widget.TextInputLayout></span>
-<span class="lineno"> 114 </span>
-<span class="caretline"><span class="lineno"> 115 </span>        <span class="warning"><span class="tag">&lt;LinearLayout</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 116 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"fill_parent"</span>
-<span class="lineno"> 117 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 118 </span>            <span class="prefix">android:</span><span class="attribute">orientation</span>=<span class="value">"horizontal"</span>>
+<span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:117</span>: <span class="message">Set <code>android:baselineAligned="false"</code> on this element for better performance</span><br /><pre class="errorlines">
+<span class="lineno"> 114 </span>                <span class="prefix">android:</span><span class="attribute">inputType</span>=<span class="value">"textCapWords"</span> />
+<span class="lineno"> 115 </span>        <span class="tag">&lt;/android.support.design.widget.TextInputLayout></span>
+<span class="lineno"> 116 </span>
+<span class="caretline"><span class="lineno"> 117 </span>        <span class="warning"><span class="tag">&lt;LinearLayout</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 118 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"fill_parent"</span>
+<span class="lineno"> 119 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 120 </span>            <span class="prefix">android:</span><span class="attribute">orientation</span>=<span class="value">"horizontal"</span>>
 </pre>
 
 </div>
@@ -1721,14 +1721,14 @@ Dismiss</button>            </div>
 <span class="lineno">  36 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"75dp"</span>>
 </pre>
 
-<span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:115</span>: <span class="message">Unused namespace declaration xmlns:android; already declared on the root element</span><br /><pre class="errorlines">
-<span class="lineno"> 112 </span>                <span class="prefix">android:</span><span class="attribute">inputType</span>=<span class="value">"textCapWords"</span> />
-<span class="lineno"> 113 </span>        <span class="tag">&lt;/android.support.design.widget.TextInputLayout></span>
-<span class="lineno"> 114 </span>
-<span class="caretline"><span class="lineno"> 115 </span>        <span class="tag">&lt;LinearLayout</span><span class="attribute"> </span><span class="warning"><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 116 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"fill_parent"</span>
-<span class="lineno"> 117 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 118 </span>            <span class="prefix">android:</span><span class="attribute">orientation</span>=<span class="value">"horizontal"</span>>
+<span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:117</span>: <span class="message">Unused namespace declaration xmlns:android; already declared on the root element</span><br /><pre class="errorlines">
+<span class="lineno"> 114 </span>                <span class="prefix">android:</span><span class="attribute">inputType</span>=<span class="value">"textCapWords"</span> />
+<span class="lineno"> 115 </span>        <span class="tag">&lt;/android.support.design.widget.TextInputLayout></span>
+<span class="lineno"> 116 </span>
+<span class="caretline"><span class="lineno"> 117 </span>        <span class="tag">&lt;LinearLayout</span><span class="attribute"> </span><span class="warning"><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 118 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"fill_parent"</span>
+<span class="lineno"> 119 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 120 </span>            <span class="prefix">android:</span><span class="attribute">orientation</span>=<span class="value">"horizontal"</span>>
 </pre>
 
 <span class="location"><a href="../../src/main/res/layout/fragment_dados_animal.xml">../../src/main/res/layout/fragment_dados_animal.xml</a>:19</span>: <span class="message">Unused namespace declaration xmlns:android; already declared on the root element</span><br /><pre class="errorlines">
@@ -2473,7 +2473,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 195 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"17sp"</span></pre>
 
 <span class="location"><a href="../../src/main/res/layout/item_lista_animal.xml">../../src/main/res/layout/item_lista_animal.xml</a>:27</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
-<span class="lineno"> 24 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"336dp"</span>
+<span class="lineno"> 24 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
 <span class="lineno"> 25 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
 <span class="lineno"> 26 </span>            <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"start"</span>
 <span class="caretline"><span class="lineno"> 27 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">paddingLeft</span></span>=<span class="value">"@dimen/padding_list"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -2602,7 +2602,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 21 </span>        <span class="prefix">app:</span><span class="attribute">srcCompat</span>=<span class="value">"@drawable/ic_add_light"</span> />
 </pre>
 
-<button class="mdl-button mdl-js-button mdl-button--primary" id="RtlHardcodedDivLink" onclick="reveal('RtlHardcodedDiv');" />+ 13 More Occurrences...</button>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="RtlHardcodedDivLink" onclick="reveal('RtlHardcodedDiv');" />+ 12 More Occurrences...</button>
 <div id="RtlHardcodedDiv" style="display: none">
 <span class="location"><a href="../../src/main/res/layout/content_form_dados_complementares.xml">../../src/main/res/layout/content_form_dados_complementares.xml</a>:246</span>: <span class="message">Consider adding <code>android:drawableStart="@drawable/save"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
 <span class="lineno"> 243 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
@@ -2630,7 +2630,7 @@ Dismiss</button>            </div>
 </span><span class="lineno">  39 </span><span class="attribute">                </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/spinner_proprietario"</span>
 <span class="caretline"><span class="lineno">  40 </span>                <span class="warning"><span class="prefix">android:</span><span class="attribute">layout_alignParentLeft</span></span>=<span class="value">"true"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  41 </span>                <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"left"</span>
-<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"0.7"</span>
 <span class="lineno">  43 </span>                <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"74dp"</span></pre>
 
 <span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:41</span>: <span class="message">Use "<code>start</code>" instead of "<code>left</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
@@ -2638,18 +2638,9 @@ Dismiss</button>            </div>
 </span><span class="lineno">  39 </span><span class="attribute">                </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/spinner_proprietario"</span>
 <span class="lineno">  40 </span>                <span class="prefix">android:</span><span class="attribute">layout_alignParentLeft</span>=<span class="value">"true"</span>
 <span class="caretline"><span class="lineno">  41 </span>                <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"</span><span class="warning"><span class="value">left</span></span><span class="value">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="lineno">  42 </span>                <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"0.7"</span>
 <span class="lineno">  43 </span>                <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"74dp"</span>
 <span class="lineno">  44 </span>                <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span></pre>
-
-<span class="location"><a href="../../src/main/res/layout/content_form_propriedade.xml">../../src/main/res/layout/content_form_propriedade.xml</a>:55</span>: <span class="message">Consider adding <code>android:drawableStart="@drawable/add"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
-<span class="lineno">  52 </span>                <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"50dp"</span>
-<span class="lineno">  53 </span>                <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"50dp"</span>
-<span class="lineno">  54 </span>                <span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/btn_add_proprietario"</span>
-<span class="caretline"><span class="lineno">  55 </span>                <span class="warning"><span class="prefix">android:</span><span class="attribute">drawableLeft</span></span>=<span class="value">"@drawable/add"</span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  56 </span>            <span class="tag">&lt;/Button></span>
-<span class="lineno">  57 </span>        <span class="tag">&lt;/LinearLayout></span>
-</pre>
 
 <span class="location"><a href="../../src/main/res/layout/fragment_dados_animal.xml">../../src/main/res/layout/fragment_dados_animal.xml</a>:26</span>: <span class="message">Consider adding <code>android:layout_alignParentStart="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
 <span class="lineno">  23 </span>
@@ -2679,7 +2670,7 @@ Dismiss</button>            </div>
 <span class="lineno">  44 </span>    <span class="tag">&lt;android.support.design.widget.TextInputLayout</span></pre>
 
 <span class="location"><a href="../../src/main/res/layout/item_lista_animal.xml">../../src/main/res/layout/item_lista_animal.xml</a>:27</span>: <span class="message">Consider adding <code>android:paddingStart="@dimen/padding_list"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
-<span class="lineno"> 24 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"336dp"</span>
+<span class="lineno"> 24 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
 <span class="lineno"> 25 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
 <span class="lineno"> 26 </span>            <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"start"</span>
 <span class="caretline"><span class="lineno"> 27 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">paddingLeft</span></span>=<span class="value">"@dimen/padding_list"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>

@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m2.53s</div>
+<div class="counter">3m16.93s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,14 +66,62 @@
 <a name="animalCadastroActivityTest1"></a>
 <h3 class="failures">animalCadastroActivityTest1</h3>
 <span class="code">
-<pre>android.support.test.espresso.PerformException: Error performing 'scroll to' on view 'with id: com.nutricampus.app:id/btn_add_proprietario'.
-at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
-at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
+<pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Jorge Veloso&quot; and Child at position 1 in parent (with class name: is &quot;com.android.internal.app.AlertController$RecycleListView&quot; and has parent matching: with class name: is &quot;android.widget.FrameLayout&quot;) and is displayed on the screen to the user)
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b35497f0 VFED.VC. .F....I. 12,12-444,157 #1020326 android:id/select_dialog_listview}
+
+View Hierarchy:
++&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-&gt;FrameLayout{id=-1, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++--&gt;FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---&gt;LinearLayout{id=16908909, res-name=parentPanel, visibility=VISIBLE, width=456, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=0.0, child-count=4}
+|
++----&gt;LinearLayout{id=16908910, res-name=topPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----&gt;View{id=16908920, res-name=titleDividerTop, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----&gt;LinearLayout{id=16908911, res-name=title_template, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------&gt;AppCompatImageView{id=16908294, res-name=icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++------&gt;DialogTitle{id=16908912, res-name=alertTitle, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----&gt;View{id=16908913, res-name=titleDivider, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++----&gt;LinearLayout{id=16908917, res-name=contentPanel, visibility=VISIBLE, width=456, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-----&gt;RecycleListView{id=16909094, res-name=select_dialog_listview, visibility=VISIBLE, width=432, height=145, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=12.0, child-count=2}
+|
++------&gt;AppCompatCheckedTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=432, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Selecione uma proprietário, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++------&gt;AppCompatCheckedTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=432, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=73.0, text=Jorge Veloso, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++----&gt;FrameLayout{id=16908919, res-name=customPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-----&gt;FrameLayout{id=16908331, res-name=custom, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0}
+|
++----&gt;LinearLayout{id=16908914, res-name=buttonPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-----&gt;LinearLayout{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------&gt;AppCompatButton{id=16908314, res-name=button2, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------&gt;AppCompatButton{id=16908315, res-name=button3, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------&gt;AppCompatButton{id=16908313, res-name=button1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++--&gt;ViewStub{id=16909070, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:579)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:92)
 at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest1(Animal01CadastroActivityTest.java:102)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest1(Animal01CadastroActivityTest.java:122)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -105,20 +153,6 @@ at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
 at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
 at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
-Caused by: java.lang.RuntimeException: Scrolling to view was attempted, but the view is not displayed
-at android.support.test.espresso.action.ScrollToAction.perform(ScrollToAction.java:66)
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
-at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
-at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-at android.os.Handler.handleCallback(Handler.java:733)
-at android.os.Handler.dispatchMessage(Handler.java:95)
-at android.os.Looper.loop(Looper.java:136)
-at android.app.ActivityThread.main(ActivityThread.java:5017)
-at java.lang.reflect.Method.invokeNative(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:515)
-at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
-at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
-at dalvik.system.NativeStart.main(Native Method)
 </pre>
 </span>
 </div>
@@ -127,7 +161,7 @@ at dalvik.system.NativeStart.main(Native Method)
 <h3 class="failures">animalCadastroActivityTest2</h3>
 <span class="code">
 <pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Propriedade 1&quot; and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b3068130 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b35ed678 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
 
 View Hierarchy:
 +&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
@@ -179,7 +213,7 @@ at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailur
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest2(Animal01CadastroActivityTest.java:306)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest2(Animal01CadastroActivityTest.java:299)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -219,16 +253,16 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:17
 <h3 class="failures">animalCadastroActivityTest3</h3>
 <span class="code">
 <pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Jorge Veloso&quot; and Child at position 1 in parent (with class name: is &quot;com.android.internal.app.AlertController$RecycleListView&quot; and has parent matching: with class name: is &quot;android.widget.FrameLayout&quot;) and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b33831c0 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b32c3ab0 VFED.VC. .F....I. 12,12-444,157 #1020326 android:id/select_dialog_listview}
 
 View Hierarchy:
-+&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
++&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
 |
-+-&gt;FrameLayout{id=-1, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
++-&gt;FrameLayout{id=-1, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
 |
-+--&gt;FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
++--&gt;FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=480, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
 |
-+---&gt;LinearLayout{id=16908909, res-name=parentPanel, visibility=VISIBLE, width=456, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=0.0, child-count=4}
++---&gt;LinearLayout{id=16908909, res-name=parentPanel, visibility=VISIBLE, width=456, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=0.0, child-count=4}
 |
 +----&gt;LinearLayout{id=16908910, res-name=topPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
 |
@@ -242,11 +276,13 @@ View Hierarchy:
 |
 +-----&gt;View{id=16908913, res-name=titleDivider, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
 |
-+----&gt;LinearLayout{id=16908917, res-name=contentPanel, visibility=VISIBLE, width=456, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
++----&gt;LinearLayout{id=16908917, res-name=contentPanel, visibility=VISIBLE, width=456, height=169, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
 |
-+-----&gt;RecycleListView{id=16909094, res-name=select_dialog_listview, visibility=VISIBLE, width=432, height=72, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=12.0, child-count=1}
++-----&gt;RecycleListView{id=16909094, res-name=select_dialog_listview, visibility=VISIBLE, width=432, height=145, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=12.0, y=12.0, child-count=2}
 |
-+------&gt;AppCompatTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=432, height=33, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=&lt;&lt; Cadastre um proprietário &gt;&gt;, input-type=0, ime-target=false, has-links=false}
++------&gt;AppCompatCheckedTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=432, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Selecione uma proprietário, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++------&gt;AppCompatCheckedTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=432, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=73.0, text=Jorge Veloso, input-type=0, ime-target=false, has-links=false, is-checked=false}
 |
 +----&gt;FrameLayout{id=16908919, res-name=customPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
 |
@@ -271,7 +307,7 @@ at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailur
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest3(Animal01CadastroActivityTest.java:437)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest3(Animal01CadastroActivityTest.java:430)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -311,7 +347,7 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:17
 <h3 class="failures">animalCadastroActivityTest4</h3>
 <span class="code">
 <pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Procure uma propriedade&quot; and Child at position 0 in parent (with id: 2131689661 and Child at position 0 in parent an instance of android.widget.LinearLayout) and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:android.support.v7.widget.AppCompatSpinner{b34aaf48 VFED..C. ......I. 0,0-355,111 #7f0f00bd app:id/spinnerPropriedade}
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:android.support.v7.widget.AppCompatSpinner{b35b4d10 VFED..C. ......I. 0,0-355,111 #7f0f00bd app:id/spinnerPropriedade}
 
 View Hierarchy:
 +&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
@@ -472,7 +508,7 @@ at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError
 at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest4(Animal01CadastroActivityTest.java:648)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest4(Animal01CadastroActivityTest.java:641)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -512,7 +548,7 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:17
 <h3 class="failures">animalCadastroActivityTest5</h3>
 <span class="code">
 <pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Propriedade 1&quot; and Child at position 1 in parent (with class name: is &quot;com.android.internal.app.AlertController$RecycleListView&quot; and has parent matching: with class name: is &quot;android.widget.FrameLayout&quot;) and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b3478d88 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b352f6a0 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
 
 View Hierarchy:
 +&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
@@ -564,7 +600,7 @@ at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailur
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest5(Animal01CadastroActivityTest.java:680)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest5(Animal01CadastroActivityTest.java:673)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -604,7 +640,7 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:17
 <h3 class="failures">animalCadastroActivityTest6</h3>
 <span class="code">
 <pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: android:id/text1 and with text: is &quot;Propriedade 1&quot; and Child at position 1 in parent (with class name: is &quot;com.android.internal.app.AlertController$RecycleListView&quot; and has parent matching: with class name: is &quot;android.widget.FrameLayout&quot;) and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b32c1590 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:com.android.internal.app.AlertController$RecycleListView{b310ca98 VFED.VC. .F....I. 12,12-444,84 #1020326 android:id/select_dialog_listview}
 
 View Hierarchy:
 +&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=96, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
@@ -656,7 +692,7 @@ at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailur
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest6(Animal01CadastroActivityTest.java:735)
+at com.nutricampus.app.acceptance.Animal01CadastroActivityTest.animalCadastroActivityTest6(Animal01CadastroActivityTest.java:728)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -703,34 +739,34 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:17
 </thead>
 <tr>
 <td>animalCadastroActivityTest1</td>
-<td class="failures">failed (32.157s)</td>
+<td class="failures">failed (39.823s)</td>
 </tr>
 <tr>
 <td>animalCadastroActivityTest2</td>
-<td class="failures">failed (30.460s)</td>
+<td class="failures">failed (30.770s)</td>
 </tr>
 <tr>
 <td>animalCadastroActivityTest3</td>
-<td class="failures">failed (36.289s)</td>
+<td class="failures">failed (41.712s)</td>
 </tr>
 <tr>
 <td>animalCadastroActivityTest4</td>
-<td class="failures">failed (31.687s)</td>
+<td class="failures">failed (30.315s)</td>
 </tr>
 <tr>
 <td>animalCadastroActivityTest5</td>
-<td class="failures">failed (28.437s)</td>
+<td class="failures">failed (28.428s)</td>
 </tr>
 <tr>
 <td>animalCadastroActivityTest6</td>
-<td class="failures">failed (23.504s)</td>
+<td class="failures">failed (25.880s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 2, 2017 4:28:47 PM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 2, 2017 6:58:58 PM</p>
 </div>
 </div>
 </body>

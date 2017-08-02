@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">43.770s</div>
+<div class="counter">1m27.66s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,14 +66,14 @@
 <a name="producaoDeLeiteEdicaoTA1"></a>
 <h3 class="failures">producaoDeLeiteEdicaoTA1</h3>
 <span class="code">
-<pre>android.support.test.espresso.PerformException: Error performing 'long click' on view 'with text: is &quot;animalAdmin UM&quot;'.
+<pre>android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 139, 583 and precision: 16, 16' on view '(with id: com.nutricampus.app:id/btn_salvar_producao and with text: is &quot;Atualizar&quot;)'.
 at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
 at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
 at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA1(ProducaoDeLeiteEdicaoAcceptanceTest.java:189)
+at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA1(ProducaoDeLeiteEdicaoAcceptanceTest.java:242)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -106,10 +106,22 @@ at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
 at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
 at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
-Caused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:
-at least 90 percent of the view's area is displayed to the user.
-Target view: &quot;AppCompatTextView{id=2131689749, res-name=lista_animal_nome, visibility=VISIBLE, width=504, height=56, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=animalAdmin UM, input-type=0, ime-target=false, has-links=false}&quot;
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:138)
+Caused by: java.lang.IllegalStateException: Could not find a method salvar(View) in the activity class android.support.v7.widget.TintContextWrapper for onClick handler on view class android.support.v7.widget.AppCompatButton with id 'btn_salvar_producao'
+at android.view.View$1.onClick(View.java:3810)
+at android.view.View.performClick(View.java:4438)
+at android.view.View$PerformClick.run(View.java:18422)
+at android.os.Handler.handleCallback(Handler.java:733)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:470)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:411)
+at android.support.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:229)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:138)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:118)
+at android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:135)
+at android.support.test.espresso.action.Tap.access$100(Tap.java:35)
+at android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)
+at android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
 at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
 at java.util.concurrent.FutureTask.run(FutureTask.java:237)
 at android.os.Handler.handleCallback(Handler.java:733)
@@ -121,6 +133,11 @@ at java.lang.reflect.Method.invoke(Method.java:515)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
 at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NoSuchMethodException: salvar [class android.view.View]
+at java.lang.Class.getConstructorOrMethod(Class.java:472)
+at java.lang.Class.getMethod(Class.java:857)
+at android.view.View$1.onClick(View.java:3803)
+... 25 more
 </pre>
 </span>
 </div>
@@ -128,14 +145,14 @@ at dalvik.system.NativeStart.main(Native Method)
 <a name="producaoDeLeiteEdicaoTA2"></a>
 <h3 class="failures">producaoDeLeiteEdicaoTA2</h3>
 <span class="code">
-<pre>android.support.test.espresso.PerformException: Error performing 'long click' on view 'with text: is &quot;animalAdmin UM&quot;'.
+<pre>android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 139, 583 and precision: 16, 16' on view '(with id: com.nutricampus.app:id/btn_salvar_producao and with text: is &quot;Atualizar&quot;)'.
 at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
 at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
 at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA2(ProducaoDeLeiteEdicaoAcceptanceTest.java:303)
+at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA2(ProducaoDeLeiteEdicaoAcceptanceTest.java:336)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -168,10 +185,22 @@ at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
 at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
 at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
-Caused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:
-at least 90 percent of the view's area is displayed to the user.
-Target view: &quot;AppCompatTextView{id=2131689749, res-name=lista_animal_nome, visibility=VISIBLE, width=504, height=56, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=animalAdmin UM, input-type=0, ime-target=false, has-links=false}&quot;
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:138)
+Caused by: java.lang.IllegalStateException: Could not find a method salvar(View) in the activity class android.support.v7.widget.TintContextWrapper for onClick handler on view class android.support.v7.widget.AppCompatButton with id 'btn_salvar_producao'
+at android.view.View$1.onClick(View.java:3810)
+at android.view.View.performClick(View.java:4438)
+at android.view.View$PerformClick.run(View.java:18422)
+at android.os.Handler.handleCallback(Handler.java:733)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:470)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:411)
+at android.support.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:229)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:138)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:118)
+at android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:135)
+at android.support.test.espresso.action.Tap.access$100(Tap.java:35)
+at android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)
+at android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
 at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
 at java.util.concurrent.FutureTask.run(FutureTask.java:237)
 at android.os.Handler.handleCallback(Handler.java:733)
@@ -183,6 +212,11 @@ at java.lang.reflect.Method.invoke(Method.java:515)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
 at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NoSuchMethodException: salvar [class android.view.View]
+at java.lang.Class.getConstructorOrMethod(Class.java:472)
+at java.lang.Class.getMethod(Class.java:857)
+at android.view.View$1.onClick(View.java:3803)
+... 25 more
 </pre>
 </span>
 </div>
@@ -190,14 +224,14 @@ at dalvik.system.NativeStart.main(Native Method)
 <a name="producaoDeLeiteEdicaoTA3"></a>
 <h3 class="failures">producaoDeLeiteEdicaoTA3</h3>
 <span class="code">
-<pre>android.support.test.espresso.PerformException: Error performing 'long click' on view 'with text: is &quot;animalAdmin UM&quot;'.
+<pre>android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 139, 583 and precision: 16, 16' on view '(with id: com.nutricampus.app:id/btn_salvar_producao and with text: is &quot;Atualizar&quot;)'.
 at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
 at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
 at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
 at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
 at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
 at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA3(ProducaoDeLeiteEdicaoAcceptanceTest.java:397)
+at com.nutricampus.app.acceptance.ProducaoDeLeiteEdicaoAcceptanceTest.producaoDeLeiteEdicaoTA3(ProducaoDeLeiteEdicaoAcceptanceTest.java:450)
 at java.lang.reflect.Method.invokeNative(Native Method)
 at java.lang.reflect.Method.invoke(Method.java:515)
 at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -230,10 +264,22 @@ at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
 at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
 at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
-Caused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:
-at least 90 percent of the view's area is displayed to the user.
-Target view: &quot;AppCompatTextView{id=2131689749, res-name=lista_animal_nome, visibility=VISIBLE, width=504, height=56, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=animalAdmin UM, input-type=0, ime-target=false, has-links=false}&quot;
-at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:138)
+Caused by: java.lang.IllegalStateException: Could not find a method salvar(View) in the activity class android.support.v7.widget.TintContextWrapper for onClick handler on view class android.support.v7.widget.AppCompatButton with id 'btn_salvar_producao'
+at android.view.View$1.onClick(View.java:3810)
+at android.view.View.performClick(View.java:4438)
+at android.view.View$PerformClick.run(View.java:18422)
+at android.os.Handler.handleCallback(Handler.java:733)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:470)
+at android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:411)
+at android.support.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:229)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:138)
+at android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:118)
+at android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:135)
+at android.support.test.espresso.action.Tap.access$100(Tap.java:35)
+at android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)
+at android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
 at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
 at java.util.concurrent.FutureTask.run(FutureTask.java:237)
 at android.os.Handler.handleCallback(Handler.java:733)
@@ -245,6 +291,11 @@ at java.lang.reflect.Method.invoke(Method.java:515)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
 at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NoSuchMethodException: salvar [class android.view.View]
+at java.lang.Class.getConstructorOrMethod(Class.java:472)
+at java.lang.Class.getMethod(Class.java:857)
+at android.view.View$1.onClick(View.java:3803)
+... 25 more
 </pre>
 </span>
 </div>
@@ -260,22 +311,22 @@ at dalvik.system.NativeStart.main(Native Method)
 </thead>
 <tr>
 <td>producaoDeLeiteEdicaoTA1</td>
-<td class="failures">failed (14.464s)</td>
+<td class="failures">failed (29.557s)</td>
 </tr>
 <tr>
 <td>producaoDeLeiteEdicaoTA2</td>
-<td class="failures">failed (14.440s)</td>
+<td class="failures">failed (28.830s)</td>
 </tr>
 <tr>
 <td>producaoDeLeiteEdicaoTA3</td>
-<td class="failures">failed (14.866s)</td>
+<td class="failures">failed (29.277s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 2, 2017 4:28:47 PM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 2, 2017 6:58:58 PM</p>
 </div>
 </div>
 </body>
