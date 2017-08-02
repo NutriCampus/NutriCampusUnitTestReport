@@ -173,10 +173,10 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 9 errors and 154 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 9 errors and 155 warnings</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-Check performed at Tue Jul 25 22:29:54 UTC 2017      </nav>
+Check performed at Wed Aug 02 16:18:39 UTC 2017      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -197,7 +197,7 @@ Check performed at Tue Jul 25 22:29:54 UTC 2017      </nav>
       <a class="mdl-navigation__link" href="#DisableBaselineAlignment"><i class="material-icons warning-icon">warning</i>Missing <code>baselineAligned</code> attribute (1)</a>
       <a class="mdl-navigation__link" href="#InefficientWeight"><i class="material-icons warning-icon">warning</i>Inefficient layout weight (3)</a>
       <a class="mdl-navigation__link" href="#Overdraw"><i class="material-icons warning-icon">warning</i>Overdraw: Painting regions more than once (8)</a>
-      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (49)</a>
+      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (50)</a>
       <a class="mdl-navigation__link" href="#UselessParent"><i class="material-icons warning-icon">warning</i>Useless parent layout (1)</a>
       <a class="mdl-navigation__link" href="#UnusedNamespace"><i class="material-icons warning-icon">warning</i>Unused namespace (6)</a>
       <a class="mdl-navigation__link" href="#IconLauncherShape"><i class="material-icons warning-icon">warning</i>The launcher icon shape should use a distinct silhouette (1)</a>
@@ -272,7 +272,7 @@ Check performed at Tue Jul 25 22:29:54 UTC 2017      </nav>
 <td class="countColumn">8</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#Overdraw">Overdraw</a>: Overdraw: Painting regions more than once</td></tr>
 <tr>
-<td class="countColumn">49</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">50</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
@@ -341,14 +341,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java">../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java</a>:181</span>: <span class="message">On click handler <code>salvar(View)</code> must be public</span><br /><pre class="errorlines">
-<span class="lineno"> 178 </span>
-<span class="lineno"> 179 </span>  }
-<span class="lineno"> 180 </span>
-<span class="caretline"><span class="lineno"> 181 </span>  <span class="keyword">protected</span> <span class="keyword">void</span> <span class="error">salvar</span>(View view) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 182 </span>      <span class="keyword">if</span> (!validaDados()) {
-<span class="lineno"> 183 </span>          Toast.makeText(CadastrarPropriedadeActivity.<span class="keyword">this</span>, R.string.msg_erro_cadastro_geral, Toast.LENGTH_LONG).show();
-<span class="lineno"> 184 </span>          <span class="keyword">return</span>;
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java">../../src/main/java/com/nutricampus/app/activities/CadastrarPropriedadeActivity.java</a>:185</span>: <span class="message">On click handler <code>salvar(View)</code> must be public</span><br /><pre class="errorlines">
+<span class="lineno"> 182 </span>
+<span class="lineno"> 183 </span>  }
+<span class="lineno"> 184 </span>
+<span class="caretline"><span class="lineno"> 185 </span>  <span class="keyword">protected</span> <span class="keyword">void</span> <span class="error">salvar</span>(View view) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 186 </span>      <span class="keyword">if</span> (!validaDados()) {
+<span class="lineno"> 187 </span>          Toast.makeText(CadastrarPropriedadeActivity.<span class="keyword">this</span>, R.string.msg_erro_cadastro_geral, Toast.LENGTH_LONG).show();
+<span class="lineno"> 188 </span>          <span class="keyword">return</span>;
 </pre>
 
 </div>
@@ -443,13 +443,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/utils/Conversor.java">../../src/main/java/com/nutricampus/app/utils/Conversor.java</a>:69</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>toLowerCase(Locale)</code> instead. For strings meant to be internal use <code>Locale.ROOT</code>, otherwise <code>Locale.getDefault()</code>.</span><br /><pre class="errorlines">
-<span class="lineno"> 66 </span>      meses.put(<span class="string">"novembro"</span>, <span class="number">10</span>);
-<span class="lineno"> 67 </span>      meses.put(<span class="string">"dezembro"</span>, <span class="number">11</span>);
-<span class="lineno"> 68 </span>
-<span class="caretline"><span class="lineno"> 69 </span>      <span class="keyword">int</span> valor = (meses.get(String.valueOf(mes).<span class="warning">toLowerCase</span>()) != <span class="keyword">null</span>) ? meses.get(String.valueOf(mes).toLowerCase()) : <span class="number">12</span>;</span>
-<span class="lineno"> 70 </span>      <span class="keyword">return</span> valor;
-<span class="lineno"> 71 </span>  }
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/utils/Conversor.java">../../src/main/java/com/nutricampus/app/utils/Conversor.java</a>:71</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>toLowerCase(Locale)</code> instead. For strings meant to be internal use <code>Locale.ROOT</code>, otherwise <code>Locale.getDefault()</code>.</span><br /><pre class="errorlines">
+<span class="lineno"> 68 </span>        meses.put(<span class="string">"novembro"</span>, <span class="number">10</span>);
+<span class="lineno"> 69 </span>        meses.put(<span class="string">"dezembro"</span>, <span class="number">11</span>);
+<span class="lineno"> 70 </span>
+<span class="caretline"><span class="lineno"> 71 </span>        <span class="keyword">return</span> (meses.get(String.valueOf(mes).<span class="warning">toLowerCase</span>()) != <span class="keyword">null</span>) ? meses.get(String.valueOf(mes).toLowerCase()) : <span class="number">12</span>;</span>
+<span class="lineno"> 72 </span>    }
+<span class="lineno"> 73 </span>
+<span class="lineno"> 74 </span>}
 </pre>
 
 </div>
@@ -581,14 +582,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/utils/Conversor.java">../../src/main/java/com/nutricampus/app/utils/Conversor.java</a>:34</span>: <span class="message">To get local formatting use <code>getDateInstance()</code>, <code>getDateTimeInstance()</code>, or <code>getTimeInstance()</code>, or use <code>new SimpleDateFormat(String template, Locale locale)</code> with for example <code>Locale.US</code> for ASCII dates.</span><br /><pre class="errorlines">
-<span class="lineno"> 31 </span>
-<span class="lineno"> 32 </span>    <span class="keyword">public</span> <span class="keyword">static</span> Date StringToDate(String string) {
-<span class="lineno"> 33 </span>        Date date = <span class="keyword">null</span>;
-<span class="caretline"><span class="lineno"> 34 </span>        SimpleDateFormat sdf = <span class="warning"><span class="keyword">new</span> SimpleDateFormat(<span class="string">"dd/MM/yyyy"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 35 </span>        <span class="keyword">try</span> {
-<span class="lineno"> 36 </span>            date = sdf.parse(string);
-<span class="lineno"> 37 </span>        } <span class="keyword">catch</span> (ParseException e) {
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/utils/Conversor.java">../../src/main/java/com/nutricampus/app/utils/Conversor.java</a>:36</span>: <span class="message">To get local formatting use <code>getDateInstance()</code>, <code>getDateTimeInstance()</code>, or <code>getTimeInstance()</code>, or use <code>new SimpleDateFormat(String template, Locale locale)</code> with for example <code>Locale.US</code> for ASCII dates.</span><br /><pre class="errorlines">
+<span class="lineno"> 33 </span>
+<span class="lineno"> 34 </span>    <span class="keyword">public</span> <span class="keyword">static</span> Date stringToDate(String string) {
+<span class="lineno"> 35 </span>        Date date = <span class="keyword">null</span>;
+<span class="caretline"><span class="lineno"> 36 </span>        SimpleDateFormat sdf = <span class="warning"><span class="keyword">new</span> SimpleDateFormat(<span class="string">"dd/MM/yyyy"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 37 </span>        <span class="keyword">try</span> {
+<span class="lineno"> 38 </span>            date = sdf.parse(string);
+<span class="lineno"> 39 </span>        } <span class="keyword">catch</span> (ParseException e) {
 </pre>
 
 </div>
@@ -890,7 +891,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 42 </span>    <span class="keyword">public</span> View getView(<span class="keyword">int</span> indice, <span class="keyword">final</span> View convertView, ViewGroup viewGroup) {
 <span class="caretline"><span class="lineno"> 43 </span>        <span class="keyword">final</span> View view = <span class="warning">act.getLayoutInflater()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 44 </span>                .inflate(R.layout.lista_prole_personalizada, viewGroup, <span class="keyword">false</span>);
-<span class="lineno"> 45 </span>        <span class="keyword">final</span> Prole prole = <span class="keyword">this</span>.prole.get(indice);
+<span class="lineno"> 45 </span>        <span class="keyword">final</span> Prole itemProle = <span class="keyword">this</span>.prole.get(indice);
 </pre>
 
 <span class="location"><a href="../../src/main/java/com/nutricampus/app/adapters/ListaPropriedadesAdapter.java">../../src/main/java/com/nutricampus/app/adapters/ListaPropriedadesAdapter.java</a>:42</span>: <span class="message">Unconditional layout inflation from view adapter: Should use View Holder pattern (use recycled view passed into this method as the second parameter) for smoother scrolling</span><br /><pre class="errorlines">
@@ -1200,7 +1201,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 5 </span>        <span class="tag">&lt;item></span>item2<span class="tag">&lt;/item></span>
 <span class="lineno"> 6 </span>        <span class="tag">&lt;item></span>item3<span class="tag">&lt;/item></span></pre>
 
-<button class="mdl-button mdl-js-button mdl-button--primary" id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 44 More Occurrences...</button>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 45 More Occurrences...</button>
 <div id="UnusedResourcesDiv" style="display: none">
 <span class="location"><a href="../../src/main/res/values/dimens.xml">../../src/main/res/values/dimens.xml</a>:5</span>: <span class="message">The resource <code>R.dimen.nav_header_vertical_spacing</code> appears to be unused</span><br /><pre class="errorlines">
 <span class="lineno">  2 </span>    <span class="comment">&lt;!-- Default screen margins, per the Android Design guidelines. --></span>
@@ -1519,6 +1520,16 @@ Additional locations: <ul>
 <span class="lineno">  99 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_historico"</span>>Histórico de dados<span class="tag">&lt;/string></span>
 <span class="lineno"> 100 </span>
 <span class="lineno"> 101 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_identificador"</span>>Identificador<span class="tag">&lt;/string></span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:122</span>: <span class="message">The resource <code>R.string.campo_corrigir</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 119 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_gestante"</span>>Gestante<span class="tag">&lt;/string></span>
+<span class="lineno"> 120 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_cio"</span>>Cio<span class="tag">&lt;/string></span>
+<span class="lineno"> 121 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"campo_semana_lactacao"</span>>Semana de Lactação<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 122 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"campo_corrigir"</span></span>>Corrigir<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 123 </span>    <span class="tag">&lt;string-array</span><span class="attribute"> name</span>=<span class="value">"titulos"</span>>
+<span class="lineno"> 124 </span>        <span class="tag">&lt;item></span>Animal<span class="tag">&lt;/item></span>
+<span class="lineno"> 125 </span>        <span class="tag">&lt;item></span>Dados Gerais<span class="tag">&lt;/item></span>
 </pre>
 
 <span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:169</span>: <span class="message">The resource <code>R.string.titulo_novo_proprietario</code> appears to be unused</span><br /><pre class="errorlines">
@@ -2166,14 +2177,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nutricampus/app/fragments/DadosComplementaresFragment.java">../../src/main/java/com/nutricampus/app/fragments/DadosComplementaresFragment.java</a>:122</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 119 </span>          ((RadioButton) radioGroup.getChildAt(dadosComplAnimal.getEEC())).setChecked(<span class="keyword">true</span>);
-<span class="lineno"> 120 </span>      <span class="keyword">else</span>
-<span class="lineno"> 121 </span>          ((RadioButton) radioGroup.getChildAt(dadosComplAnimal.getEEC() - <span class="number">1</span>)).setChecked(<span class="keyword">true</span>);
-<span class="caretline"><span class="lineno"> 122 </span>      btnSalvar.setText(<span class="warning"><span class="string">"Atualizar"</span></span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 123 </span>      btnHistRegistros.setVisibility(View.VISIBLE);
-<span class="lineno"> 124 </span>      btnHistRegistros.setOnClickListener(<span class="keyword">this</span>);
-<span class="lineno"> 125 </span>  }
+<span class="location"><a href="../../src/main/java/com/nutricampus/app/fragments/DadosComplementaresFragment.java">../../src/main/java/com/nutricampus/app/fragments/DadosComplementaresFragment.java</a>:128</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 125 </span>          ((RadioButton) radioGroup.getChildAt(dadosComplAnimal.getEec())).setChecked(<span class="keyword">true</span>);
+<span class="lineno"> 126 </span>      <span class="keyword">else</span>
+<span class="lineno"> 127 </span>          ((RadioButton) radioGroup.getChildAt(dadosComplAnimal.getEec() - <span class="number">1</span>)).setChecked(<span class="keyword">true</span>);
+<span class="caretline"><span class="lineno"> 128 </span>      btnSalvar.setText(<span class="warning"><span class="string">"Atualizar"</span></span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 129 </span>      btnHistRegistros.setVisibility(View.VISIBLE);
+<span class="lineno"> 130 </span>      btnHistRegistros.setOnClickListener(<span class="keyword">this</span>);
+<span class="lineno"> 131 </span>  }
 </pre>
 
 <span class="location"><a href="../../src/main/java/com/nutricampus/app/adapters/ListaAnimaisAdapter.java">../../src/main/java/com/nutricampus/app/adapters/ListaAnimaisAdapter.java</a>:61</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
@@ -2186,13 +2197,13 @@ Dismiss</button>            </div>
 </pre>
 
 <span class="location"><a href="../../src/main/java/com/nutricampus/app/adapters/ListaAnimaisAdapter.java">../../src/main/java/com/nutricampus/app/adapters/ListaAnimaisAdapter.java</a>:63</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 60 </span>     <span class="keyword">if</span> (animal.isAtivo())
-<span class="lineno"> 61 </span>         ativo.setText(<span class="string">"Ativo"</span>);
-<span class="lineno"> 62 </span>     <span class="keyword">else</span>
-<span class="caretline"><span class="lineno"> 63 </span>         ativo.setText(<span class="warning"><span class="string">"Inativo"</span></span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 60 </span>      <span class="keyword">if</span> (animal.isAtivo())
+<span class="lineno"> 61 </span>          ativo.setText(<span class="string">"Ativo"</span>);
+<span class="lineno"> 62 </span>      <span class="keyword">else</span>
+<span class="caretline"><span class="lineno"> 63 </span>          ativo.setText(<span class="warning"><span class="string">"Inativo"</span></span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 64 </span>
-<span class="lineno"> 65 </span>     RepositorioPropriedade repositorioPropriedade = <span class="keyword">new</span> RepositorioPropriedade(context);
-<span class="lineno"> 66 </span>     Propriedade p = repositorioPropriedade.buscarPropriedade(animal.getId_propriedade());
+<span class="lineno"> 65 </span>      RepositorioPropriedade repositorioPropriedade = <span class="keyword">new</span> RepositorioPropriedade(context);
+<span class="lineno"> 66 </span>      Propriedade p = repositorioPropriedade.buscarPropriedade(animal.getIdPropriedade());
 </pre>
 
 <span class="location"><a href="../../src/androidTest/java/com/nutricampus/app/utils/ValidaFormularioInstrumentedTest.java">../../src/androidTest/java/com/nutricampus/app/utils/ValidaFormularioInstrumentedTest.java</a>:55</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
