@@ -28,13 +28,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m28.26s</div>
+<div class="counter">2m53.61s</div>
 <p>duration</p>
 </div>
 </td>
@@ -43,8 +43,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">75%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -54,218 +54,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="AnimalAtualizarActivityTest1"></a>
-<h3 class="failures">AnimalAtualizarActivityTest1</h3>
-<span class="code">
-<pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: com.nutricampus.app:id/btnConfimarDados and with text: is &quot;Confirmar dados&quot; and has parent matching: (with id: com.nutricampus.app:id/fragmentDadosAnimal and has parent matching: with id: com.nutricampus.app:id/pager) and is displayed on the screen to the user)
-If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:android.support.v7.widget.AppCompatSpinner{3b28137 VFED..C. ......I. 0,0-355,111 #7f0f00bd app:id/spinnerPropriedade}
-
-View Hierarchy:
-+&gt;DecorView{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
-|
-+-&gt;LinearLayout{id=-1, visibility=VISIBLE, width=480, height=800, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+--&gt;ViewStub{id=16909171, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
-|
-+--&gt;FrameLayout{id=-1, visibility=VISIBLE, width=480, height=393, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=38.0, child-count=1}
-|
-+---&gt;ActionBarOverlayLayout{id=2131689604, res-name=decor_content_parent, visibility=VISIBLE, width=480, height=393, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+----&gt;ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=480, height=309, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=84.0, child-count=1}
-|
-+-----&gt;LinearLayout{id=2131689621, res-name=telaCadastrarAnimalActivity, visibility=VISIBLE, width=480, height=309, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+------&gt;TabLayout{id=2131689622, res-name=tabs, visibility=VISIBLE, width=480, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
-|
-+-------&gt;SlidingTabStrip{id=-1, visibility=VISIBLE, width=480, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+--------&gt;TabView{id=-1, visibility=VISIBLE, width=240, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+---------&gt;AppCompatImageView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
-|
-+---------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=78, height=29, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=81.0, y=21.0, text=Animal, input-type=0, ime-target=false, has-links=false}
-|
-+--------&gt;TabView{id=-1, visibility=VISIBLE, width=240, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0, child-count=2}
-|
-+---------&gt;AppCompatImageView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
-|
-+---------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=147, height=29, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=46.0, y=21.0, text=Dados Gerais, input-type=0, ime-target=false, has-links=false}
-|
-+------&gt;ViewPager{id=2131689623, res-name=pager, visibility=VISIBLE, width=450, height=207, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=87.0, child-count=2}
-|
-+-------&gt;LinearLayout{id=2131689742, res-name=fragmentDadosAnimal, visibility=VISIBLE, width=430, height=187, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=10.0, y=10.0, child-count=7}
-|
-+--------&gt;AppCompatEditText{id=2131689660, res-name=input_id_propriedade, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=1, input-type=1, ime-target=false, has-links=false}
-|
-+--------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=430, height=113, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+---------&gt;AppCompatSpinner{id=2131689661, res-name=spinnerPropriedade, visibility=VISIBLE, width=355, height=111, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
-|
-+----------&gt;AppCompatTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=331, height=33, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=39.0, text=Propriedade 1, input-type=0, ime-target=false, has-links=false}
-|
-+---------&gt;AppCompatButton{id=2131689743, res-name=btn_add_propriedade, visibility=VISIBLE, width=75, height=75, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=355.0, y=15.0, text=, input-type=0, ime-target=false, has-links=false}
-|
-+--------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=430, height=62, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=119.0, child-count=1}
-|
-+---------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=430, height=46, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+----------&gt;AppCompatEditText{id=2131689678, res-name=input_identificador, visibility=VISIBLE, width=430, height=46, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x6 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=Flor, input-type=1, ime-target=true, has-links=false}
-|
-+--------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=430, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=193.0, child-count=1}
-|
-+---------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=430, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+----------&gt;AppCompatEditText{id=2131689653, res-name=input_data_nascimento, visibility=VISIBLE, width=430, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x14 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=03/08/2017, input-type=20, ime-target=false, has-links=false}
-|
-+--------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=170, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=130.0, y=223.0, text=Animal está ativo?, input-type=0, ime-target=false, has-links=false}
-|
-+--------&gt;Switch{id=2131689744, res-name=switch_ativo, visibility=VISIBLE, width=120, height=41, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=155.0, y=223.0, text=Ativo, input-type=0, ime-target=false, has-links=false, is-checked=true}
-|
-+--------&gt;AppCompatButton{id=2131689745, res-name=btnConfimarDados, visibility=VISIBLE, width=231, height=0, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=99.0, y=288.0, text=Confirmar dados, input-type=0, ime-target=false, has-links=false}
-|
-+-------&gt;ScrollView{id=2131689746, res-name=fragmentDadosComplementar, visibility=VISIBLE, width=430, height=187, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=440.0, y=10.0, child-count=1}
-|
-+--------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=430, height=741, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=10}
-|
-+---------&gt;AppCompatEditText{id=2131689660, res-name=input_id_propriedade, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=, input-type=1, ime-target=false, has-links=false}
-|
-+---------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=400, height=16, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=16.0, child-count=1}
-|
-+----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=400, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+-----------&gt;AppCompatEditText{id=2131689678, res-name=input_identificador, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=false, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=1, ime-target=false, has-links=false}
-|
-+---------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=400, height=99, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=38.0, child-count=2}
-|
-+----------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=200, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, child-count=1}
-|
-+-----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+------------&gt;AppCompatEditText{id=2131689679, res-name=input_peso_vivo, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2002 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=500.0, input-type=8194, ime-target=false, has-links=false}
-|
-+----------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=200, height=91, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=200.0, y=0.0, child-count=1}
-|
-+-----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=200, height=75, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+------------&gt;AppCompatEditText{id=2131689680, res-name=input_data_complementar, visibility=VISIBLE, width=200, height=75, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x14 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=03/08/2017, input-type=20, ime-target=false, has-links=false}
-|
-+---------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=400, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=137.0, child-count=2}
-|
-+----------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=200, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=6.0, child-count=1}
-|
-+-----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+------------&gt;AppCompatEditText{id=2131689681, res-name=input_caminhada_vertical, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2002 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=1.0, input-type=8194, ime-target=false, has-links=false}
-|
-+----------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=200, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=200.0, y=6.0, child-count=1}
-|
-+-----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+------------&gt;AppCompatEditText{id=2131689682, res-name=input_caminhada_horizontal, visibility=VISIBLE, width=200, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2002 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=1.0, input-type=8194, ime-target=false, has-links=false}
-|
-+---------&gt;TextInputLayout{id=-1, visibility=VISIBLE, width=270, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=239.0, child-count=1}
-|
-+----------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=270, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=16.0, child-count=1}
-|
-+-----------&gt;AppCompatEditText{id=2131689683, res-name=input_semana_lactacao, visibility=VISIBLE, width=270, height=68, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=0.0, text=2, input-type=2, ime-target=false, has-links=false}
-|
-+---------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=400, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=344.0, child-count=2}
-|
-+----------&gt;AppCompatCheckBox{id=2131689684, res-name=ckb_pastando, visibility=VISIBLE, width=200, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Pastando, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+----------&gt;AppCompatCheckBox{id=2131689685, res-name=ckb_lactacao, visibility=VISIBLE, width=200, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=200.0, y=0.0, text=Lactação, input-type=0, ime-target=false, has-links=false, is-checked=true}
-|
-+---------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=400, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=392.0, child-count=2}
-|
-+----------&gt;AppCompatCheckBox{id=2131689686, res-name=ckb_cio, visibility=VISIBLE, width=200, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Cio, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+----------&gt;AppCompatCheckBox{id=2131689687, res-name=ckb_gestante, visibility=VISIBLE, width=200, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=200.0, y=0.0, text=Gestante, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+---------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=315, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=57.0, y=455.0, child-count=2}
-|
-+----------&gt;AppCompatTextView{id=2131689688, res-name=textView, visibility=VISIBLE, width=315, height=36, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=eec, input-type=0, ime-target=false, has-links=false}
-|
-+----------&gt;RadioGroup{id=2131689689, res-name=rgEec, visibility=VISIBLE, width=315, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=36.0, child-count=5}
-|
-+-----------&gt;AppCompatRadioButton{id=2131689690, res-name=rb1, visibility=VISIBLE, width=63, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=1, input-type=0, ime-target=false, has-links=false, is-checked=true}
-|
-+-----------&gt;AppCompatRadioButton{id=2131689691, res-name=rb2, visibility=VISIBLE, width=63, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=0.0, text=2, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+-----------&gt;AppCompatRadioButton{id=2131689692, res-name=rb3, visibility=VISIBLE, width=63, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=126.0, y=0.0, text=3, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+-----------&gt;AppCompatRadioButton{id=2131689693, res-name=rb4, visibility=VISIBLE, width=63, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=189.0, y=0.0, text=4, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+-----------&gt;AppCompatRadioButton{id=2131689694, res-name=rb5, visibility=VISIBLE, width=63, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=252.0, y=0.0, text=5, input-type=0, ime-target=false, has-links=false, is-checked=false}
-|
-+---------&gt;AppCompatButton{id=2131689695, res-name=btn_salvar, visibility=VISIBLE, width=400, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=563.0, text=Atualizar, input-type=0, ime-target=false, has-links=false}
-|
-+---------&gt;AppCompatButton{id=2131689696, res-name=btn_hist_registros, visibility=VISIBLE, width=400, height=72, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=15.0, y=659.0, text=Histórico de dados, input-type=0, ime-target=false, has-links=false}
-|
-+----&gt;ActionBarContainer{id=2131689605, res-name=action_bar_container, visibility=VISIBLE, width=480, height=84, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
-|
-+-----&gt;Toolbar{id=2131689606, res-name=action_bar, visibility=VISIBLE, width=480, height=84, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
-|
-+------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=178, height=41, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=108.0, y=21.0, text=NutriCampus, input-type=0, ime-target=false, has-links=false}
-|
-+------&gt;AppCompatImageButton{id=-1, desc=Navigate up, visibility=VISIBLE, width=84, height=84, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
-|
-+------&gt;ActionMenuView{id=-1, visibility=VISIBLE, width=0, height=84, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=480.0, y=0.0, child-count=0}
-|
-+-----&gt;ActionBarContextView{id=2131689607, res-name=action_context_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0}
-|
-at dalvik.system.VMStack.getThreadStackTrace(Native Method)
-at java.lang.Thread.getStackTrace(Thread.java:580)
-at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:92)
-at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
-at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
-at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
-at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
-at com.nutricampus.app.acceptance.Animal03AtualizarActivityTest.AnimalAtualizarActivityTest1(Animal03AtualizarActivityTest.java:79)
-at java.lang.reflect.Method.invoke(Native Method)
-at java.lang.reflect.Method.invoke(Method.java:372)
-at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
-at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
-at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-at org.junit.runners.Suite.runChild(Suite.java:128)
-at org.junit.runners.Suite.runChild(Suite.java:27)
-at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
-at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
-at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1853)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -276,26 +68,26 @@ at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:18
 </thead>
 <tr>
 <td>AnimalAtualizarActivityTest1</td>
-<td class="failures">failed (32.464s)</td>
+<td class="success">passed (50.480s)</td>
 </tr>
 <tr>
 <td>AnimalAtualizarActivityTest2</td>
-<td class="success">passed (30.179s)</td>
+<td class="success">passed (33.191s)</td>
 </tr>
 <tr>
 <td>animalAtuaizarActivityTest3</td>
-<td class="success">passed (42.544s)</td>
+<td class="success">passed (45.081s)</td>
 </tr>
 <tr>
 <td>animalEditarActivityTest4</td>
-<td class="success">passed (43.072s)</td>
+<td class="success">passed (44.858s)</td>
 </tr>
 </table>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 3, 2017 2:02:58 AM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Aug 3, 2017 2:37:57 AM</p>
 </div>
 </div>
 </body>
